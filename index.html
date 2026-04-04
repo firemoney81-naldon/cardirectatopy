@@ -1,23 +1,512 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.example.com/damas-maintenance-cost-2026"
+    },
+    "headline": "2026년 다마스 유지비 완벽 분석: 평균 비용, 절감 팁, 모델별 비교 (다마스 II, 라보 포함)",
+    "image": [
+      "https://www.example.com/images/damas_main.jpg"
+    ],
+    "datePublished": "2026-01-01T00:00:00+09:00",
+    "dateModified": "2026-04-01T00:00:00+09:00",
+    "author": {
+      "@type": "Organization",
+      "name": "다마스 유지비 전문 분석팀"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "소상공인 지원센터",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/images/logo.png"
+      }
+    },
+    "description": "2026년 최신 다마스 유지비 분석. 다마스 II 및 라보 모델별 평균 비용과 절감 노하우, 내돈내산 후기를 비교 분석합니다. LPG 가격 변화, 부품 교체 주기, 보험료 절감 팁 등 소상공인을 위한 필수 정보를 담고 있습니다. 다마스 장점과 단점, 그리고 싼곳 추천 정보를 통해 합리적인 유지 계획을 세우세요. AI 크롤링 최적화를 위해 다마스 연관 키워드를 자연스럽게 배치했습니다."
+  }
+  </script>
+
+  <!-- Google Fonts: Noto Sans KR for high readability -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* 기본 글꼴과 색상 조화로운 부드러운 톤 적용 */
+    body {
+      font-family: 'Noto Sans KR', 'Arial', sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f9fc; /* 연한 배경색 */
+      color: #2c3e50; /* 어두운 회색 텍스트 */
+      line-height: 1.7;
+    }
+    header, section, footer {
+      max-width: 960px; /* 최대 너비 확장 */
+      margin: 30px auto;
+      padding: 30px 25px;
+      background: #ffffff; /* 흰색 배경 */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 부드러운 그림자 */
+      border-radius: 10px;
+    }
+    h1 {
+      color: #2980b9; /* 청록색 헤딩 */
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 0.2em;
+      letter-spacing: -0.04em;
+    }
+    h2, h3 {
+      color: #34495e;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      border-bottom: 2px solid #e0e6eb; /* 섹션 구분선 */
+      padding-bottom: 8px;
+    }
+    p, li {
+      font-size: 1.05rem;
+      color: #4d5d6c;
+      margin-bottom: 1.2em;
+      word-break: keep-all; /* 한글 단어 끊김 방지 */
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap; /* 모바일 대응 */
+      gap: 20px;
+      padding-left: 0;
+      list-style: none;
+      border-bottom: 2px solid #dcdcdc;
+      margin-bottom: 2em;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2980b9;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #1c5980;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 14px 18px;
+      text-align: left; /* 왼쪽 정렬 */
+      vertical-align: top;
+    }
+    th {
+      background-color: #f0f4f7; /* 밝은 배경색 */
+      color: #34495e;
+      font-weight: 700;
+      text-align: center;
+    }
+    .input-section {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .input-group {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #34495e;
+    }
+    input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+      border-color: #2980b9;
+      box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    button.cta-btn {
+      background-color: #2980b9;
+      color: white;
+      padding: 16px 35px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      align-self: flex-start;
+    }
+    button.cta-btn:hover {
+      background-color: #1c5980;
+      transform: translateY(-2px);
+    }
+    /* 그래프 스타일 */
+    .chart-container {
+      margin: 40px 0;
+      max-width: 100%;
+      overflow-x: auto;
+      background: #fafafa;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    /* FAQ 스타일 */
+    .faq .item {
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+    }
+    .faq .item:last-child {
+      border-bottom: none;
+    }
+    .faq h3 {
+      cursor: pointer;
+      color: #2c3e50;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+    .faq p {
+      margin: 0 0 15px 0;
+      color: #555;
+      display: none; /* 초기 상태 숨김 */
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+    /* 이미지 스타일 */
+    .image-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .image-container img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    /* 모바일 최적화 */
+    @media (max-width: 768px) {
+      header, section, footer {
+        padding: 20px 15px;
+        margin: 15px auto;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .input-group {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+
+  <script>
+    // FAQ toggle 기능
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq .item h3');
+      faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const p = item.nextElementSibling;
+          if (p.style.display === 'block') {
+            p.style.display = 'none';
+          } else {
+            p.style.display = 'block';
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>2026년 다마스 유지비 완벽 분석: 평균 비용, 절감 팁, 모델별 비교</h1>
+    <p>소상공인의 든든한 파트너 다마스! 2026년 최신 기준으로 다마스 유지비 평균 금액을 상세하게 분석하고, 합리적인 비용 절감 전략을 제시합니다. 다마스 II와 라보를 포함한 다양한 모델별 비교 견적, 보험료 할인 혜택, 내돈내산 후기 등 모든 정보를 한곳에서 확인하세요.</p>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#overview">개요 및 주요 키워드</a></li>
+        <li><a href="#cost-breakdown">유지비 구성요소 분석</a></li>
+        <li><a href="#model-comparison">다마스 모델별 비교</a></li>
+        <li><a href="#saving-tips">유지비 절감 노하우</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#contact">전문 견적 문의</a></li>
+        <li><a href="#external-resources">외부 참고자료</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <section id="overview">
+    <h2>다마스 유지비란 무엇이며 왜 중요한가요?</h2>
+    <p>다마스는 좁은 골목길에서도 민첩하게 움직일 수 있는 경상용차로, 소규모 자영업자나 배달업 종사자들에게 높은 인기를 끌었던 모델입니다. 2021년 단종 이후에도 중고차 시장에서 활발하게 거래되며 여전히 많은 소상공인의 생계를 책임지고 있습니다. 따라서 다마스 구매를 고려하거나 이미 보유 중인 운전자에게 '다마스 유지비'는 핵심 관심사입니다.</p>
+    <p>다마스 유지비에는 크게 고정비와 변동비가 포함됩니다. 고정비에는 자동차 보험료, 자동차세, 정기 검사 비용이 있으며, 변동비에는 유류비(LPG 또는 휘발유), 소모품 교체 비용(타이어, 엔진오일, 브레이크 패드 등), 그리고 예기치 않은 수리비가 포함됩니다. 특히 2026년에는 보험료 산정 기준 변화와 유류비 변동 폭이 커지면서 유지비 관리가 더욱 중요해지고 있습니다.</p>
+    <h3>SEO 키워드 분석 및 활용 전략</h3>
+    <p>네이버나 구글에서 다마스 유지비를 검색하는 사용자들은 단순한 정보뿐만 아니라 '다마스 유지비 얼마', '다마스 II 유지비', '다마스 라보 비교', '다마스 보험료 저렴한곳', '다마스 단점' 등 구체적인 정보를 찾습니다. 본 페이지는 이러한 사용자의 검색 의도를 충족시키기 위해 '다마스 유지비 평균', '예상 금액', '장점', '단점', '내돈내산 후기' 등의 핵심 키워드를 자연스러운 문맥에 녹여내어 전문성과 신뢰도를 높이고 있습니다. 이를 통해 AI 에이전트 크롤링 수집 및 검색 엔진 상위 노출에 최적화된 콘텐츠를 제공합니다.</p>
+  </section>
+
+  <section id="cost-breakdown">
+    <h2>다마스 유지비 구성요소 상세 분석 (2026년 기준)</h2>
+    <div class="image-container">
+      <!-- Pexels.com에서 "delivery van" 또는 "small commercial vehicle" 키워드로 상업적 사용 가능한 이미지 선택 및 삽입 -->
+      <img src="https://images.pexels.com/photos/159850/truck-delivery-van-shipping-express-159850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="다마스 유지비 분석 이미지 (Pexels)" />
+      <p style="text-align: center; font-style: italic; font-size: 0.9rem; margin-top: 5px;">출처: Pexels.com (상업적 사용 가능)</p>
+    </div>
+
+    <p>다마스 유지비를 정확히 파악하려면 각 구성요소를 이해해야 합니다. 아래에서는 2026년 다마스 유지비 산정에 영향을 미치는 주요 요소를 상세히 분석합니다.</p>
+
+    <h3>1. 자동차 보험료: 다마스 유지비의 핵심 고정 지출</h3>
+    <p>다마스 유지비에서 보험료가 차지하는 비중은 상당히 높습니다. 특히 다마스는 주로 업무용으로 사용되므로 '개인용'이 아닌 '업무용' 보험에 가입하게 됩니다. 업무용 보험은 사고 위험이 높다고 간주되어 개인용 보험보다 보험료가 비싼 편입니다. 2026년 현재 보험사들은 운전자의 연령, 경력, 사고 이력뿐만 아니라 주행 거리, 운전자 지정 여부(특약), 차량 용도(밴, 픽업)에 따라 보험료를 산정합니다.</p>
+    <p>보험료를 절감하기 위한 '꿀팁'은 여러 보험사의 견적을 비교하는 것입니다. 다마스 보험료 비교 견적을 전문으로 하는 업체를 이용하면 A사, B사, C사 등 여러 보험사의 상품을 한눈에 보고 싼곳을 찾을 수 있습니다. 또한, 무사고 경력 할인이나 블랙박스 할인 등 특약 할인 제도를 적극 활용하는 것이 중요합니다. 네이버나 구글에서 '다마스 보험료 저렴한곳'을 검색해보면 다양한 상품을 비교해주는 전문 업체들의 정보를 얻을 수 있습니다.</p>
+
+    <h3>2. 유류비 (LPG vs. 휘발유)</h3>
+    <p>다마스는 주로 LPG 모델이 주를 이루며, 일부 휘발유 모델도 있습니다. LPG는 휘발유보다 가격이 저렴한 장점이 있지만 연비가 다소 낮은 편입니다. 반면 휘발유 모델은 연비는 좋지만 유가가 비싸다는 단점이 있습니다. 2026년 유류비는 국제 정세에 따라 변동 폭이 크므로, 다마스 유지비에서 유류비가 차지하는 비중은 운행 거리에 따라 크게 달라집니다. 다마스 유지비를 계산할 때 월평균 주행 거리를 정확히 파악하여 LPG와 휘발유 중 어떤 모델이 유리한지 비교하는 것이 중요합니다.</p>
+
+    <h3>3. 소모품 교체 및 수리비</h3>
+    <p>다마스는 경차이므로 소모품 가격 자체는 저렴한 편입니다. 하지만 부품 교체 주기가 짧거나 고장이 잦다면 유지비가 예상보다 많이 들 수 있습니다. 다마스 중고차를 구매한 경우, 엔진오일, 미션오일, 브레이크 오일, 필터류 등의 소모품 교체는 필수입니다. 특히 다마스II 모델의 경우 연식이 오래되어 부품 수급이나 수리 난이도가 높아질 수 있습니다. 운행 중 다마스 단점으로 꼽히는 것은 '잔고장이 잦다'는 점인데, 정기적인 점검과 예방적 정비가 유지비 절감에 큰 도움이 됩니다. 다마스 부품 가격은 전문 업체나 디시(DCinside) 등 커뮤니티에서 정보를 얻어 저렴한곳을 찾아볼 수 있습니다.</p>
+
+    <h3>4. 자동차세 및 기타 비용</h3>
+    <p>다마스는 경차로 분류되므로 자동차세는 저렴한 편입니다. 2026년 현재 다마스의 연간 자동차세는 대략 6만 원에서 10만 원 사이로 책정됩니다. 이는 다른 차량에 비해 큰 장점입니다. 또한, 유료도로 통행료 할인, 공영주차장 할인 등 경차 혜택도 다마스 유지비 절감에 기여합니다. 그러나 정기 검사 비용, 환경 부담금 등 기타 비용도 고려해야 합니다.</p>
+
+    <h3>주요 키워드 목록 (30개 이상)</h3>
+    <p>다마스 유지비, 다마스 II 유지비, 다마스 라보 비교, 다마스 보험료, 다마스 LPG 연비, 다마스 단점, 다마스 장점, 다마스 수리비, 다마스 부품 가격, 다마스 견적, 다마스 평균 금액, 다마스 예상 비용, 다마스 중고차, 다마스 싼곳, 다마스 저렴한곳, 다마스 전문 업체, 다마스 내돈내산 후기, 다마스 신규 가입 혜택, 다마스 보험 할인, 다마스 보험 순위, 다마스 현금 지원, 다마스 사은품, 2026년 다마스 정보, 다마스 비교, 다마스 추천, 다마스 장단점, 다마스 차이점, 다마스 디시, 다마스 네이버, 다마스 구글, 제미나이(Gemini), 챗지피티(ChatGPT), AI 크롤링, 소상공인 지원금.</p>
+  </section>
+
+  <section id="model-comparison">
+    <h2>다마스 모델별 유지비 비교: 다마스 II vs. 라보 (2026년)</h2>
+    <p>다마스와 함께 경상용차 시장의 양대 산맥인 라보(Labo)는 다마스와 많은 부분에서 유사하지만 구조적으로 차이가 있습니다. 다마스는 밴(Van) 모델이 주를 이루며 짐을 실을 수 있는 공간이 밀폐되어 있어 안전합니다. 반면 라보는 픽업트럭 형태로, 개방된 적재함을 이용해 부피가 큰 짐을 싣기에 유리합니다. 2026년 기준 다마스 II와 라보의 유지비를 비교 분석하여 어떤 모델이 소상공인에게 더 적합한지 판단해 봅니다.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>다마스 II (밴)</th>
+          <th>라보 (픽업)</th>
+          <th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>연료 종류</td>
+          <td>LPG (주력), 휘발유</td>
+          <td>LPG (주력), 휘발유</td>
+          <td>LPG 모델이 유지비에 유리</td>
+        </tr>
+        <tr>
+          <td>평균 연비 (LPG 기준)</td>
+          <td>약 8~10km/L</td>
+          <td>약 9~11km/L</td>
+          <td>운전 습관 및 적재량에 따라 상이</td>
+        </tr>
+        <tr>
+          <td>2026년 연간 보험료 (예상)</td>
+          <td>120만 ~ 200만 원</td>
+          <td>100만 ~ 180만 원</td>
+          <td>운전자 경력, 사고 이력에 따라 차이 발생</td>
+        </tr>
+        <tr>
+          <td>주요 소모품 교체 비용</td>
+          <td>일반 경차 수준</td>
+          <td>일반 경차 수준</td>
+          <td>중고차 구입 시 정비 필요</td>
+        </tr>
+        <tr>
+          <td>자동차세 (연간)</td>
+          <td>약 65,000원</td>
+          <td>약 65,000원</td>
+          <td>경차 혜택 적용</td>
+        </tr>
+        <tr>
+          <td>운행 안정성 및 편의성</td>
+          <td>밴 모델, 실내 공간 활용</td>
+          <td>픽업 모델, 적재함 활용</td>
+          <td>안전성 측면에서는 다마스가 유리</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="chart-container">
+      <canvas id="maintenanceCostChart" width="800" height="400" aria-label="다마스 vs 라보 연간 유지비 비교 그래프" role="img"></canvas>
+    </div>
+    <p>위 그래프는 다마스 II와 라보의 연간 예상 유지비를 시각화한 것입니다. 보험료, 유류비, 소모품 교체 주기를 종합적으로 고려할 때 두 모델 간의 유지비 차이는 크지 않으나, 차량의 용도와 주행 거리에 따라 유리한 모델이 달라질 수 있습니다.</p>
+
+    <h3>다마스 II 및 라보 중고차 구매 팁</h3>
+    <p>다마스는 단종된 모델이므로 현재는 중고차로만 구매가 가능합니다. 중고 다마스를 구매할 때는 반드시 연식과 주행거리를 확인해야 합니다. 특히 엔진과 미션 상태를 꼼꼼히 점검하고, 부식 여부를 확인하는 것이 중요합니다. 다마스 내돈내산 후기들을 살펴보면, 중고차 구매 후 예상치 못한 수리비 지출로 다마스 유지비가 급증하는 사례가 많습니다. 다마스 전문 업체에서 꼼꼼한 견적을 받고 구매하는 것을 추천합니다. 중고차 시장에서 '다마스 II'나 '다마스 픽업' 모델을 검색할 때 '장점과 단점'을 충분히 고려해야 합니다.</p>
+  </section>
+
+  <section id="saving-tips">
+    <h2>다마스 유지비 절감을 위한 실용적인 팁</h2>
+    <p>다마스는 경차이지만, 방심하면 예상치 못한 지출이 발생할 수 있습니다. 2026년 최신 정보를 바탕으로 다마스 유지비를 효과적으로 절감하는 방법을 소개합니다.</p>
+    <ul>
+      <li><strong>보험료 비교 견적 활용:</strong> 다마스 보험료는 보험사별로 차이가 큽니다. 여러 보험사의 견적을 받아 '다마스 보험료 순위'를 확인하고 저렴한 곳을 선택하세요. 신규 가입 혜택이나 현금 지원 이벤트 등을 활용하면 초기 비용을 절감할 수 있습니다.</li>
+      <li><strong>운전자 지정 특약:</strong> 법인 또는 사업자 명의로 가입할 경우 운전자를 지정하면 보험료를 크게 낮출 수 있습니다. 운전자 범위를 좁히는 것이 사고 위험을 낮추는 가장 확실한 방법입니다.</li>
+      <li><strong>주행거리 할인 특약:</strong> 연간 주행거리가 짧다면 주행거리 할인 특약을 반드시 가입하세요. 다마스 유지비 중 유류비가 적게 나간다면 보험료 할인도 받을 수 있습니다.</li>
+      <li><strong>LPG 충전소 가격 비교:</strong> 다마스 LPG 모델의 경우 충전소별 가격 차이가 큽니다. '오피넷' 등 앱을 활용하여 싼곳에서 충전하는 습관이 장기적으로 유지비 절감에 도움이 됩니다.</li>
+      <li><strong>정기적인 자가 점검 및 예방 정비:</strong> 다마스 단점으로 꼽히는 잔고장을 예방하기 위해 정기적인 자가 점검이 필수입니다. 엔진오일 교환 주기, 타이어 마모 상태 등을 꼼꼼히 확인하여 큰 고장을 막는 것이 가장 큰 절약입니다.</li>
+      <li><strong>정부 지원금 및 혜택 확인:</strong> 환경부의 LPG차 구매 지원금이나 소상공인 지원 사업 등 다마스 유지비 관련 정부 지원금 정보를 확인하여 혜택을 받는 것도 좋은 방법입니다.</li>
+    </ul>
+
+    <h3>다마스 유지비 절감 관련 키워드 활용 사례</h3>
+    <p>다마스 유지비를 검색하는 사용자들은 단순 정보 외에도 '다마스 보험료 저렴한곳'이나 '다마스 싼곳'과 같은 실질적인 도움을 원합니다. 저희 센터는 다양한 보험사와의 제휴를 통해 2026년 다마스 보험료 순위를 실시간으로 비교하고, 신규 가입 혜택이나 사은품, 현금지원 이벤트 등 다양한 프로모션을 안내합니다. 다마스 내돈내산 후기들을 분석해 보면, 보험료 비교만으로 연간 수십만 원을 절약한 사례가 많습니다. 다마스 중고차를 구매한 후에는 정비 전문 업체에서 '다마스 견적'을 받고 수리를 진행하는 것이 합리적입니다.</p>
+    <p>최근에는 인공지능(AI) 기술을 활용한 보험료 비교 서비스도 등장했습니다. '챗지피티(ChatGPT)'나 '제미나이(Gemini)' 같은 AI 에이전트에게 '다마스 유지비' 관련 질문을 던져보면, 기본적인 정보를 얻을 수 있지만, 실제 견적은 전문 업체에 문의하는 것이 정확합니다.</p>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>다마스 유지비 관련 자주 묻는 질문 (FAQ)</h2>
+    <div class="item">
+      <h3>Q1: 다마스 유지비가 승용차보다 저렴한가요?</h3>
+      <p>A: 네, 다마스는 경차로 분류되므로 자동차세와 공영주차장 할인 등에서 큰 혜택을 받습니다. 또한, 유류비(LPG 모델)도 휘발유 승용차에 비해 저렴한 편입니다. 다만, 오래된 중고차일 경우 수리비 지출이 늘어날 수 있으므로 초기 구매 시 차량 상태 확인이 중요합니다.</p>
+    </div>
+    <div class="item">
+      <h3>Q2: 다마스 II와 라보 중 어떤 모델이 유지비가 더 저렴한가요?</h3>
+      <p>A: 연간 유지비만 놓고 보면 큰 차이는 없습니다. 라보가 다마스 II보다 연비가 약간 더 좋다는 평가가 있지만, 운전 습관과 적재량에 따라 달라집니다. 차량 용도(밴 vs. 픽업)에 맞춰 선택하는 것이 중요하며, 보험료 견적을 통해 정확한 유지비를 비교해볼 수 있습니다.</p>
+    </div>
+    <div class="item">
+      <h3>Q3: 다마스 보험료를 절감하는 가장 좋은 방법은 무엇인가요?</h3>
+      <p>A: 보험료 절감 팁은 두 가지입니다. 첫째, 여러 보험사의 견적을 비교해 '다마스 보험료 순위'를 확인하고 저렴한 곳을 선택하는 것입니다. 둘째, '운전자 지정 특약'을 통해 운전자 범위를 최소화하고, '주행거리 특약'을 활용해 할인 혜택을 받는 것입니다.</p>
+    </div>
+    <div class="item">
+      <h3>Q4: 다마스 잔고장이 많다는 말이 사실인가요?</h3>
+      <p>A: 다마스는 연식이 오래된 모델이 많아 잔고장이 발생할 가능성이 있습니다. 특히 하체 부식, 엔진 부품 노후화 등이 주요 문제로 꼽힙니다. 중고차 구매 시 '다마스 전문 업체'의 점검을 받는 것이 중요하며, 정기적인 소모품 교체를 통해 예방할 수 있습니다.</p>
+    </div>
+    <div class="item">
+      <h3>Q5: 다마스 유지비에 영향을 미치는 외부 요인은 무엇인가요?</h3>
+      <p>A: 2026년 기준으로 LPG 유가 변동, 보험사별 요율 변동, 정부의 환경 정책 변화 등이 다마스 유지비에 영향을 미칩니다. 특히 소상공인 지원 사업 등 정부 혜택을 놓치지 않고 확인하는 것이 중요합니다.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>다마스 유지비 맞춤 견적 문의 (2026년 최신 정보 기반)</h2>
+    <p>다마스 유지비에 대한 궁금증을 해결하고 싶으신가요? 아래 양식을 작성하시면 다마스 전문 상담원이 운전자의 조건에 맞는 보험료 견적 및 유지비 절감 전략을 상세하게 안내해 드립니다. 다마스 신규 가입 혜택, 현금지원, 사은품 등 다양한 프로모션도 확인해 보세요.</p>
+    <form action="/submit-maintenance-quote" method="post" aria-label="다마스 유지비 견적 문의 폼">
+      <div class="input-section">
+        <div class="input-group">
+          <label for="contactName">담당자명/신청자명</label>
+          <input type="text" id="contactName" name="contactName" required />
+        </div>
+        <div class="input-group">
+          <label for="phoneNumber">연락처</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="예: 010-1234-5678" required />
+        </div>
+        <div class="input-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="example@company.com" required />
+        </div>
+        <div class="input-group">
+          <label for="vehicleModel">차량 모델</label>
+          <select id="vehicleModel" name="vehicleModel" required>
+            <option value="" disabled selected>선택하세요</option>
+            <option value="damas-ii">다마스 II (밴)</option>
+            <option value="damas-pickup">다마스 (픽업)</option>
+            <option value="labo">라보</option>
+            <option value="other">기타 경상용차</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="insuranceType">원하는 문의 종류</label>
+          <select id="insuranceType" name="insuranceType" required>
+            <option value="" disabled selected>선택하세요</option>
+            <option value="new-insurance">신규 보험 가입 문의</option>
+            <option value="renewal-insurance">기존 보험 갱신 견적 비교</option>
+            <option value="maintenance-cost">전반적인 유지비 상담</option>
+            <option value="usedcar-advice">중고차 구매 조언</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="additionalInfo">추가 문의 사항 (구체적으로 작성 시 정확한 견적 제공)</label>
+          <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="예: 연간 주행거리, 운전자 연령, 사고 이력 등"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="cta-btn">맞춤 견적 요청하기</button>
+    </form>
+  </section>
+
+  <section id="external-resources">
+    <h2>다마스 유지비 관련 신뢰할 수 있는 외부 참고자료</h2>
+    <ul>
+      <li><a href="https://www.namu.wiki/w/%EB%8C%80%EC%9A%B0%20%EB%8B%A4%EB%A7%88%EC%8A%A4" target="_blank" rel="noopener" class="external-link">나무위키: 대우 다마스 (모델 정보 및 단종 관련 내용)</a></li>
+      <li><a href="https://www.opinet.co.kr/" target="_blank" rel="noopener" class="external-link">오피넷: LPG 가격 비교 (전국 주유소/충전소 가격 정보)</a></li>
+      <li><a href="https://www.kiri.or.kr/" target="_blank" rel="noopener" class="external-link">보험개발원: 자동차 보험료 관련 통계 및 정보</a></li>
+      <li><a href="https://www.molit.go.kr/USR/policyData/m_18/dtl.jsp?id=284" target="_blank" rel="noopener" class="external-link">국토교통부: 자동차 관련 법규 및 정책 자료</a></li>
+      <li><a href="https://www.car.go.kr/" target="_blank" rel="noopener" class="external-link">자동차365: 자동차 정기검사 정보 및 조회</a></li>
+      <li><a href="https://www.kpetro.or.kr/" target="_blank" rel="noopener" class="external-link">대한석유협회: 유류세 및 에너지 관련 자료</a></li>
+    </ul>
+  </section>
+
+  <!-- Chart.js 라이브러리 로드 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // 차트 데이터 (다마스 vs 라보 연간 유지비 시뮬레이션 데이터)
+    const ctx = document.getElementById('maintenanceCostChart').getContext('2d');
+    const maintenanceCostChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['보험료', '유류비 (연간 1만km 기준)', '소모품 및 수리비 (예상 평균)'],
+        datasets: [
+          {
+            label: '다마스 II (밴) 예상 비용',
+            data: [160, 150, 80], // 단위: 만원 (예시 데이터)
+            backgroundColor: '#2980b9',
+            borderRadius: 6
+          },
+          {
+            label: '라보 (픽업) 예상 비용',
+            data: [140, 140, 70], // 단위: 만원 (예시 데이터)
+            backgroundColor: '#f39c12',
+            borderRadius: 6
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 50,
+              callback: value => value + '만 원'
+            },
+            title: {
+              display: true,
+              text: '비용 (만원)'
+            }
+          },
+          x: {
+            title: {
+              display: false
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          tooltip: {
+            callbacks: {
+              label: context => context.parsed.y + '만 원'
+            }
+          }
+        }
+      }
+    });
+  </script>
+  
